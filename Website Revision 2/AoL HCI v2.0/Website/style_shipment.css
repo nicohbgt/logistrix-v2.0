@@ -1,0 +1,79 @@
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #0070c9;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.shipment-table table {
+  width: 100%;
+  border-collapse: collapse; 
+  table-layout: fixed;
+}
+
+.shipment-table th,
+.shipment-table td {
+  border: 1px solid #ccc; 
+  padding: 10px;
+  text-align: center;
+}
+
+.shipment-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.action-buttons .left-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.action-buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+}
+
+.action-buttons .add {
+  background-color: #4CAF50;
+}
+
+.action-buttons .delete {
+  background-color: #f44336;
+}
+
+.action-buttons .export {
+  background-color: #555;
+}

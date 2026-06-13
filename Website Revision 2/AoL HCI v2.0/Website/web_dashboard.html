@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogiStrix - Dashboard</title>
+    <link rel="icon" href="../Assets/LogiStrix_LogoWhite(1).png">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style_dashboard.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+        <img id="menu-toggle" src="../Assets/Icon_Hamburger_White.png" alt="Menu" class="icon" />
+        <img src="../Assets/LogiStrix_LogoWhite(2).png" alt="Logo" class="logo" />
+        </div>
+        <div class="header-right">
+        <img src="../Assets/Icon_Account_White.png" alt="Account" class="icon" />
+        </div>
+    </header>
+
+    <nav id="sidebar" class="sidebar">
+        <div class="top-button">
+            <ul>
+                <li><a href="web_dashboard.html"><img src="../Assets/Icon_Pie_White.png" class="menu-icon">Dashboard</a></li>
+                <li><a href="web_inventory.html"><img src="../Assets/Icon_Box_White.png" class="menu-icon">Inventory</a></li>
+                <li><a href="web_shipment.html"><img src="../Assets/Icon_Pin_White.png" class="menu-icon">Shipment</a></li>
+                <li><a href="web_report.html"><img src="../Assets/Icon_Clipboard_White.png" class="menu-icon">Report</a></li>
+                <li><a href="web_help.html"><img src="../Assets/Icon_Help_White.png" class="menu-icon">Help</a></li>
+            </ul>
+        </div>
+        <div class="bottom-button">
+            <ul>
+                <li><a href="web_login.html" id="logout-button"><img src="../Assets/Icon_Door_White.png" class="menu-icon">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="content">
+    <div class="welcome">
+        <span>Welcome to</span>
+        <img src="../Assets/LogiStrix_LogoBlack(2).png" alt="Logo" class="inline-logo">
+    </div>
+
+    <div class="cards">
+        <div class="card small-card">
+            <h3>Total Barang yang Disimpan</h3>
+            <p>32441</p>
+        </div>
+        <div class="card small-card">
+            <h3>Stock Keeping Units (SKU)</h3>
+            <p>931</p>
+        </div>
+        <div class="card small-card">
+            <h3>Incoming Shipments Today</h3>
+            <p>5805</p>
+        </div>
+        <div class="card small-card">
+            <h3>Outgoing Shipments Today</h3>
+            <p>1815</p>
+        </div>
+
+        <div class="card medium-card">
+            <h3>Status Inventaris</h3>
+            <ul class="item-stock-list">
+                <li><span class="item-name">Nama Barang</span><span class="item-stock">Stock</span></li>
+                <li><span class="item-name">Plat Baja</span><span class="item-stock">100</span></li>
+                <li><span class="item-name">Beton</span><span class="item-stock">50</span></li>
+                <li><span class="item-name">Batang Besi</span><span class="item-stock">200</span></li>
+                <li><span class="item-name">Kawat Tembaga</span><span class="item-stock">30</span></li>
+            </ul>
+        </div>
+        <div class="card medium-card">
+            <h3>Status Pengiriman Barang</h3>
+            <div class="split-card">
+                <div class="split-half">
+                    <h4>Incoming Shipments</h4>
+                    <img src="../Assets/Pie1.png" alt="Incoming Shipments">
+                </div>
+                <div class="split-half">
+                    <h4>Outgoing Shipments</h4>
+                    <img src="../Assets/Pie2.png" alt="Outgoing Shipments">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card medium-card">
+            <h3>Recent Acitvity</h3>
+            <ul class="list-content">
+                <li>Barang BN005 dikeluarkan</li>
+                <li>Shipment BN003 dibatalkan</li>
+                <li>Shipment BN001 diterima</li>
+                <li>Barang BN004 ditambahkan</li>
+                <li>Shipment BN002 ditunda</li>
+            </ul>
+        </div>
+        <div class="card medium-card">
+            <h3>Alert</h3>
+            <ul class="list-content">
+                <li>Stock Barang BN003 habis</li>
+                <li>Stock Barang BN004 kritis</li>
+                <li>Shipment BN002 ditunda</li>
+            </ul>
+        </div>
+    </div>
+</main>
+
+
+    <footer class="footer">
+        <p>&copy; 2025 LogiStrix. All rights reserved.</p>
+    </footer>
+    <script src="global.js"></script>
+</body>
+</html>

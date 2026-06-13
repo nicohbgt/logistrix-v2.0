@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogiStrix - Report</title>
+    <link rel="icon" href="../Assets/LogiStrix_LogoWhite(1).png">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style_report.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+        <img id="menu-toggle" src="../Assets/Icon_Hamburger_White.png" alt="Menu" class="icon" />
+        <img src="../Assets/LogiStrix_LogoWhite(2).png" alt="Logo" class="logo" />
+        </div>
+        <div class="header-right">
+        <img src="../Assets/Icon_Account_White.png" alt="Account" class="icon" />
+        </div>
+    </header>
+
+    <nav id="sidebar" class="sidebar">
+        <div class="top-button">
+            <ul>
+                <li><a href="web_dashboard.html"><img src="../Assets/Icon_Pie_White.png" class="menu-icon">Dashboard</a></li>
+                <li><a href="web_inventory.html"><img src="../Assets/Icon_Box_White.png" class="menu-icon">Inventory</a></li>
+                <li><a href="web_shipment.html"><img src="../Assets/Icon_Pin_White.png" class="menu-icon">Shipment</a></li>
+                <li><a href="web_report.html"><img src="../Assets/Icon_Clipboard_White.png" class="menu-icon">Report</a></li>
+                <li><a href="web_help.html"><img src="../Assets/Icon_Help_White.png" class="menu-icon">Help</a></li>
+            </ul>
+        </div>
+        <div class="bottom-button">
+            <ul>
+                <li><a href="web_login.html" id="logout-button"><img src="../Assets/Icon_Door_White.png" class="menu-icon">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="content">
+        <div class="cards">
+            <section class="card left-card overview-card">
+            <h3>Overview</h3>
+            <p>Total Barang yang Disimpan : 12.450 Unit</p>
+            <p>Total Barang dalam Pengiriman : 3.220 Unit</p>
+            <p><i>Average Turnover Rate</i> : 1.6/Bulan</p>
+            <p>Kapasitas Gudang : 87%</p>
+            </section>
+
+            <section class="card logistik-card">
+            <h3>Logistik</h3>
+            <p>Rata-rata Waktu Pengiriman : 5.2 Hari</p>
+            <p>Pengiriman yang Tertunda : 6% (193/3.220)</p>
+            <p>Datang minggu ini : 7 Unit</p>
+            </section>
+
+            <section class="card barang-card">
+            <h3>Barang</h3>
+            <p>Barang Rusak : 1.2% (150/12.450)</p>
+            <p>Barang dengan stok rendah : 33 Jenis</p>
+            </section>
+
+            <section class="card left-card shipment-card">
+            <h3>Shipment</h3>
+            <img src="../Assets/Graph.png" alt="Graph" />
+            </section>
+        </div>
+        <div class="action-buttons">
+            <button class="export">Export</button>
+        </div>
+
+    </main>
+
+
+
+    <footer class="footer">
+        <p>&copy; 2025 LogiStrix. All rights reserved.</p>
+    </footer>
+    <script src="global.js"></script>
+</body>
+</html>

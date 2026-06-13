@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogiStrix - Help</title>
+    <link rel="icon" href="../Assets/LogiStrix_LogoWhite(1).png">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style_help.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+        <img id="menu-toggle" src="../Assets/Icon_Hamburger_White.png" alt="Menu" class="icon" />
+        <img src="../Assets/LogiStrix_LogoWhite(2).png" alt="Logo" class="logo" />
+        </div>
+        <div class="header-right">
+        <img src="../Assets/Icon_Account_White.png" alt="Account" class="icon" />
+        </div>
+    </header>
+
+    <nav id="sidebar" class="sidebar">
+        <div class="top-button">
+            <ul>
+                <li><a href="web_dashboard.html"><img src="../Assets/Icon_Pie_White.png" class="menu-icon">Dashboard</a></li>
+                <li><a href="web_inventory.html"><img src="../Assets/Icon_Box_White.png" class="menu-icon">Inventory</a></li>
+                <li><a href="web_shipment.html"><img src="../Assets/Icon_Pin_White.png" class="menu-icon">Shipment</a></li>
+                <li><a href="web_report.html"><img src="../Assets/Icon_Clipboard_White.png" class="menu-icon">Report</a></li>
+                <li><a href="web_help.html"><img src="../Assets/Icon_Help_White.png" class="menu-icon">Help</a></li>
+            </ul>
+        </div>
+        <div class="bottom-button">
+            <ul>
+                <li><a href="web_login.html" id="logout-button"><img src="../Assets/Icon_Door_White.png" class="menu-icon">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="content">
+        <div class="help-intro">
+            <h2>Perlu Bantuan?</h2>
+            <p>Bila anda mengalami kebingungan pada sistem ini, silakan mengisi <i>text-box</i> tersebut untuk kami bantu</p>
+            <textarea id="help-text" placeholder="Tulis pertanyaan atau masalah Anda di sini..."></textarea>
+            <p id="help-response" style="color: red; margin-top: 5px;"></p>
+            <button id="submit-help">Kirim</button>
+        </div>
+        <div class="left-column">
+            <h4>Getting Started</h4>
+            <p>Pelajari bagaimana cara untuk menggunakan aplikasi LogiStrix</p>
+            <a href="">Learn More</a>
+        </div>
+        <div class="middle-column">
+            <h4>How to Use</h4>
+            <p>Panduan mengenai fitur-fitur yang ada pada LogiStrix</p>
+            <a href="">Learn More</a>
+        </div>
+        <div class="right-column">
+            <h4>Security & Protection</h4>
+            <p>Amankan akun LogiStrix anda dengan pengaturan keamanan kami</p>
+            <a href="">Learn More</a>
+        </div>
+        <div class="FAQ">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            <div class="FAQ-1">
+                <h4>Apa itu LogiStrix?</h4>
+                <p>LogiStrix adalah aplikasi manajemen transportasi barang yang dirancang untuk membantu perusahaan dalam merencanakan, melaksanakan dan melacak seluruh proses logistik.</p>
+            </div>
+            <div class="FAQ-2">
+                <h4>Siapa yang dapat menggunakan LogiStrix?</h4>
+                <p>LogiStrix cocok untuk berbagai jenis bisnis yang membutuhkan solusi manajemen transportasi, termasuk perusahaan logistik (3PL/4PL), distributor, manufaktur, dan bisnis e-commerce yang mengelola pengiriman dalam skala besar maupun kecil.</p>
+            </div>
+            <div class="FAQ-3">
+                <h4>Apakah data saya aman di LogiStrix?</h4>
+                <p>Keamanan data adalah prioritas utama kami. LogiStrix menggunakan enkripsi data dan standar keamanan industri terkini untuk melindungi informasi dan transaksi Anda. Kami terus memperbarui sistem keamanan kami untuk memastikan data Anda aman.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 LogiStrix. All rights reserved.</p>
+    </footer>
+    <script src="global.js"></script>
+    <script src="script_help.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LogiStrix - Shipment</title>
+    <link rel="icon" href="../Assets/LogiStrix_LogoWhite(1).png">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style_shipment.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+        <img id="menu-toggle" src="../Assets/Icon_Hamburger_White.png" alt="Menu" class="icon" />
+        <img src="../Assets/LogiStrix_LogoWhite(2).png" alt="Logo" class="logo" />
+        </div>
+        <div class="header-right">
+        <img src="../Assets/Icon_Account_White.png" alt="Account" class="icon" />
+        </div>
+    </header>
+
+    <nav id="sidebar" class="sidebar">
+        <div class="top-button">
+            <ul>
+                <li><a href="web_dashboard.html"><img src="../Assets/Icon_Pie_White.png" class="menu-icon">Dashboard</a></li>
+                <li><a href="web_inventory.html"><img src="../Assets/Icon_Box_White.png" class="menu-icon">Inventory</a></li>
+                <li><a href="web_shipment.html"><img src="../Assets/Icon_Pin_White.png" class="menu-icon">Shipment</a></li>
+                <li><a href="web_report.html"><img src="../Assets/Icon_Clipboard_White.png" class="menu-icon">Report</a></li>
+                <li><a href="web_help.html"><img src="../Assets/Icon_Help_White.png" class="menu-icon">Help</a></li>
+            </ul>
+        </div>
+        <div class="bottom-button">
+            <ul>
+                <li><a href="web_login.html" id="logout-button"><img src="../Assets/Icon_Door_White.png" class="menu-icon">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="content">
+        <div class="search-bar">
+        <input type="text" placeholder="Search Here">
+        <button>Search</button>
+      </div>
+
+      <div class="shipment-table">
+        <table>
+          <thead>
+            <tr>
+              <th>ID_Kendaraan</th>
+              <th>Nama_Pengirim</th>
+              <th>Lokasi_Pengiriman</th>
+              <th>Status_Pengiriman</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Data dummy atau bisa diisi dinamis -->
+            <tr><td colspan="0">B001</td><td>Budiman</td><td>Jakarta</td><td>Sedang Dikirim</td></tr>
+            <tr><td colspan="4"></td></tr>
+            <tr><td colspan="4"></td></tr>
+            <tr><td colspan="4"></td></tr>
+            <tr><td colspan="4"></td></tr>
+            <tr><td colspan="4"></td></tr>
+            <tr><td colspan="4"></td></tr>
+            <tr><td colspan="4"></td></tr>
+            <tr><td colspan="4"></td></tr>
+            <tr><td colspan="4"></td></tr>
+            <tr><td colspan="4"></td></tr>
+            <tr><td colspan="4"></td></tr>
+            <tr><td colspan="4"></td></tr>
+            <tr><td colspan="4"></td></tr>
+            <tr><td colspan="4"></td></tr>
+            <tr><td colspan="4"></td></tr>
+            <tr><td colspan="4"></td></tr>
+
+          </tbody>
+        </table>
+      </div>
+
+      <br>
+
+        <div class="input-form">
+          <input type="text" id="idKendaraan" placeholder="ID_Kendaraan">
+          <input type="text" id="namaPengirim" placeholder="Nama_Pengirim">
+          <input type="text" id="lokasiPengiriman" placeholder="Lokasi_Pengiriman">
+          <input type="text" id="statusPengiriman" placeholder="Status_Pengiriman">
+        </div>
+
+        <div class="action-buttons">
+            <div class="left-buttons">
+                <button class="add" onclick="tambahPengiriman()">Tambah Pengiriman</button>
+                <button class="delete" onclick="hapusTerakhir()">Hapus Pengiriman</button>
+            </div>
+            <button class="export" onclick="exportTableToCSV()">Export</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 LogiStrix. All rights reserved.</p>
+    </footer>
+    <script src="global.js"></script>
+    <script src="script_shipment.js"></script>
+</body>
+</html>
